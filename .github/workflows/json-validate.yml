@@ -23,3 +23,5 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
           fetch-depth: 0 
+      - name: prints
+        run: echo "${{ github.event.pull_request.head.sha }}"
