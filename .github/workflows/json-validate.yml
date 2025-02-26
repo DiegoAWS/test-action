@@ -20,5 +20,3 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha || github.sha }}
           fetch-depth: 0 
-      - name: Print name of the branch
-        run: echo "Branch name: ${{ github.ref }}"
